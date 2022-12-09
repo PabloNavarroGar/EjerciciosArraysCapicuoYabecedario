@@ -42,7 +42,7 @@ public class ejercicio1 {
         }
         //Imprimimos resultados llamando al metodo con la comparativa del nuestro array char en 
         //la condicion del if llamando al metodo
-        System.out.println(" \n78");
+        System.out.println(" \n");
         System.out.println("---------Metodo CAPICUA-----------");
         
         
@@ -89,15 +89,24 @@ public class ejercicio1 {
         do{
             //bucle
             //Si el array con el numero aun en su indice no es igual al array de su longitud, mirando una casilla menos y con el numero aux
-            
+            //que en cada condicion, se ira sumando 1
             if(array[aux]!=array[array.length-1-aux]){
                 resultado = false;//se cambia a falso no es igual
             }
             //se suma 1 al contador
             aux++;
            //Se repetira siempre que sea par
-        }while(aux <array.length/2 && resultado);
+        }while(aux < array.length/2 && resultado);
+       
         
+
+//Ver los dos indices, solucion mas sencilla
+        //Otra solucon posible que es mas facil
+//           for (int i = 0; i < array.length/2; i++) {
+
+//            array[i] != array[array.length-i-1]
+//            return false;
+//        }
         
         
         

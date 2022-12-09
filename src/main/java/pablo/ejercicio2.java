@@ -34,6 +34,8 @@ public class ejercicio2 {
         }
 
         //Se muestra el array del abecedario
+        
+        System.out.println("-------ABECEDARIO----------");
         for (int i = 0; i < abecedario.length; i++) {
             System.out.print(abecedario[i] + "-");
 
@@ -42,16 +44,21 @@ public class ejercicio2 {
         //Crear un array aleatorio entre un rango
         int[] arrayAleatorio = new int[numeroAleatorioRango()];
 
+        
+        
         System.out.println(" ");
+        
+        
+        System.out.println("----------ARRAY ALEATORIO------------");
         for (int i = 0; i < arrayAleatorio.length; i++) {
-
+            //Uso la clase ARRAYS, para rellenar ese array que espacios aleatorios 
             Arrays.fill(arrayAleatorio, numeroAleatorioRango());
 
             System.out.print(arrayAleatorio[i] + "-");
         }
 
     }
-
+     //Metodo para poner un numero entero aleatorio entre 2 rangos
     public static int numeroAleatorioRango() {
         Random random = new Random();
         int enteroAleatorio;
@@ -60,6 +67,50 @@ public class ejercicio2 {
 
         return enteroAleatorio;
 
+    }
+    
+    public static char[] crearCharAbecedario(){
+        
+        char[] abecedario = new char[26];
+        int contador=0;
+        for (int i = 'A'; i <= 'Z'; i++) {
+            abecedario[contador]= (char)  (i);
+            
+            contador++;
+        }
+        
+        
+        
+        return abecedario;
+        
+        //Para poder almacenar un char en un string usamos la clase Arrya.valueof
+        //String.valueOf(abecedario);
+        
+        
+    }
+    
+    public static String[] crearArrays(int tamanio,int numeroArrays,char[]abecedario){
+        
+        String[] almacen = new String[numeroArrays];
+        
+        int contador =0;
+        
+        char[] aux= new char [tamanio];
+        
+        Random aleatorio = new Random();
+        
+        //bucle que rellena los valores del array con los arrays crados
+        
+        for (int j = 0; j < numeroArrays; j++) {
+            for (int i = 0; i < tamanio; i++) {
+                
+            }
+            
+        }
+        
+        
+        return almacen;
+        
     }
 
 }
